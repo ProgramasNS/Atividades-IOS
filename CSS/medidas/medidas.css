@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    font-size: 16px;
+
+}
+
+div.primeiro_bloco {
+    background-color: yellow;
+    font-size: 0.5em;
+}
+
+div.segundo_bloco {
+    background-color: orange;
+    font-size: 1.5em;
+}
+
+div.terceiro_bloco {
+    background-color: green;
+    font-size: 2.5em;
+}

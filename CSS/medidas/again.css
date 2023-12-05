@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: #926239;
+    line-height: 1.6em;
+}
+
+header#showcase {
+    background-image: url('recife.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    border: 5px solid red;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header#showcase h1 {
+    font-size: 3em;
+    line-height: 1.2;
+}
+
+header#showcase p {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: orange;
+    border: 2px solid #926239;
+    opacity: 0.5;
+    padding: 1rem;
+    border-radius: .5em;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn hover {
+    opacity: 1;
+}

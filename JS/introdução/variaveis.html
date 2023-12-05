@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Declaração de variáveis
+        //Var é o tipo de variável super global
+        var nome; //Declaração de variavel vazia
+        //const é o tipo de constante
+        const rg = '000.220.333-1';
+        //let variável de escopo local
+        let idade;
+        //Declarações múltiplas
+        let sala, turma, aluno;
+        var num1=3, num2=6, num3=9;
+        //Atribuindo valor às variáveis
+        nome = 'Nicolas'; //Utilizamos o sinal de igualdade depois do nome da variável 
+        nome = 'União das Repúblicas Socialistas Soviéticas' //É possível reatribuir valores às variáveis
+        console.log(nome);
+        console.warn('Oi, eu sou o Imperador da China')
+        //Acessando a árvore do DOM e seus Method
+        /* window.document.write('<h1>')  
+        window.document.write('Salve, ')
+        window.document.write('</h1>')
+        document.write('Aqui tem uma constante: ' + rg)
+        //rg = 'mudado' //Não é possível realizar esta mudança
+        document.write(' Mudamos a constante para ' + rg) */
+        nome = prompt('Diga seu nome: ')
+        idade = prompt('E sua idade, qual é? ')
+        //Convertendo string para number
+        idadeConvertida = parseInt(idade)
+        document.write('<h2>Salve, ' + nome + "!" + '</h2>')
+        document.write('<p>')
+        document.write(nome + ', você tem ' + idade + ' anos')
+        //Inserindo imagem
+        document.write('<img class="hole" src="hole.gif"/>')
+        document.write('<br>' + 'Clique na imagem acima e descubra seu destino')
+        //Calculando o tempo de vida
+        let morte = idadeConvertida - ((num2 * idadeConvertida)/num3) + num1
+        document.write('</p>')
+        console.log(morte)
+        //Detectando o clique da imagem
+        let imgClick = document.querySelector('.hole')
+        imgClick.addEventListener('click', function futuro() {
+            const anoAtual = 2023;
+            document.write('<br>' + '<br>' + '<br>')
+            document.write('<p>' + nome + ', apesar do seus ' + idade + ' anos de vida' + '<br>')
+            document.write('Ainda restam para você ' + morte + ' anos de vida' + '<br>')
+            document.write('Sendo assim você bate as botas no ano de ' + (morte + anoAtual))
+        })
+
+        //Exibindo o tempo de vida
+        
+    </script>
+</body>
+</html>

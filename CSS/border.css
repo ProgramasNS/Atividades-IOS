@@ -1,0 +1,22 @@
+body {
+    background-color: #000;
+}
+h1 {
+    text-align: center;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+}
+.Solid {
+    background-color: #00ff00;
+    border: 1px solid white;
+}
+
+.Double {
+    background-color: lime;
+    border: 1px double white;
+}
+
+.Dotted {
+    background-color: yellow;
+    border: 1px dotted white;
+}

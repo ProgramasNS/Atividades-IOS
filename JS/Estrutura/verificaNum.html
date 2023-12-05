@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num = prompt('Digite um número: ')
+        let numConvertido = parseInt(num)
+        function digitacaoVazia() {
+            if (num === '') {
+                alert('O número digitado está vazio')
+                numConvertido = 0
+            }
+        }
+        if (numConvertido == 0) {
+            alert(`O número digitado (${num}), esse é Zero!`)
+        }else if(numConvertido > 0) {
+            alert(`O número digitado (${num}), esse número é positivo!`)
+        } else {
+            alert(`O número digitado (${num}), esse número é negativo!`)
+        }
+    </script>
+</body>
+</html>

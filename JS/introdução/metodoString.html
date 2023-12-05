@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos</title>
+</head>
+<body>
+    <script>
+        //Declaração de variáveis
+        let saudacao, ios, nome, frase1, gap;
+        
+        //Atribuir valor para as variáveis
+        saudacao = 'Olá, pessoa '
+        ios = 'Instituto da Oportunidade Social'
+        nome = prompt('Qual seu nome, infeliz?')
+        frase1 = 'Ser ou não ser, cadê o busão?'
+        gap = ' '
+        //Apresentação das variáveis na tela
+        //Forma antiga de unir textos
+        //document.write(saudacao + gap +nome + gap + frase1)
+
+        //Forma moderna que se chama template string
+        //Interpolação de texto e variáveis usando o identificador 
+        // -> (${Aqui dentro escrevo JavaScript})
+        document.write(`Seja bem vinde <br> ${saudacao}${nome} <br> ${frase1}`)
+        //É possível retornar operações
+        let produto = 10
+        document.write(`${produto * 2}`)
+        document.write(`<h1>Métodos de String</h1>`)
+        console.log(frase1.length)//Propriedade length retorna o tamanho da variável
+        console.log(ios.toLowerCase())
+        console.log(ios.toUpperCase())
+        console.log(frase1.substring(15))
+        console.log(frase1.substring(15, 20) + '?')
+        //Split divide a frase de acordo com algum caracter que eu escolho
+        console.log(frase1)
+        console.log(frase1.split(','))
+        
+        let frase2 = 'As linguagens de programação são '
+        console.log(frase2.split('a'))
+        //Replace serve para trocar parte da string
+        console.log(frase1.replace('busão', 'pão'))
+        console.log(frase1.replace('ser', 'pero'))
+        frase1 = '         Oi? Tudo bem com você?       '
+        console.log(frase1.trim())
+
+    </script>
+</body>
+</html>
